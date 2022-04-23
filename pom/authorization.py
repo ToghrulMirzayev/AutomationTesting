@@ -1,18 +1,17 @@
 from base.base_object import BaseObject
-from selenium.webdriver.remote.webelement import WebElement
-from typing import List
-from selenium.common.exceptions import TimeoutException, NoSuchElementException
+from selenium.common.exceptions import NoSuchElementException
 from locators.locators import AuthorizationLocators as a, PageElementLocators as p
 
 from utilities.utilities import Utils as u
 import logging as log
 
+# Here we're using txt file for encryption the password
 with open('file.txt') as f:
     password = f.read()
 
 
 class AuthorizationSteps(BaseObject):
-    log = u.custom_logger(logLevel=log.INFO)
+    log = u.custom_logger(logLevel=log.INFO) # logs can be used for every clicks
     def __init__(self, driver):
         super().__init__(driver)
         self.driver = driver

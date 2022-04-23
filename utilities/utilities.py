@@ -17,28 +17,3 @@ class Utils:
 
         logger.addHandler(fh)
         return logger
-
-
-
-
-
-
-
-'''log.basicConfig(filename='C:\\Users\\AYTAN\\PycharmProjects\\AutomationTestingProject\\logs\\log_file.log',
-                        format="%(asctime)s: %(levelname)s: $(message)s",
-                        datefmt='%m/%d/%Y %I: %M: %S %p',
-                        level=log.INFO)
-
-log.debug('Debug message')
-log.info('Info message')
-log.warning('Warning message')
-log.error('Error message')
-log.critical('Critical message')
-
-class LoggerClass:
-    def logger(self):
-        log.basicConfig(filename='C:\\Users\\AYTAN\\PycharmProjects\\AutomationTestingProject\\logs\\log_file.log',
-                        format="%(asctime)s: %(levelname)s: $(message)s",
-                        datefmt='%m/%d/%Y %I: %M: %S %p',
-                        level=log.INFO,)
-'''
